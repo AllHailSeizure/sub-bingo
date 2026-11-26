@@ -4,7 +4,7 @@ title: Legal Documentation
 permalink: /
 ---
 
-# App Legal Documentation
+# Subreddit Bingo — Legal Documentation
 
 - [Terms of Service]({{ site.baseurl }}/terms/)
 - [Privacy Policy]({{ site.baseurl }}/privacy/)
