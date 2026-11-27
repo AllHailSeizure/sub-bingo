@@ -6,7 +6,7 @@ coverage/
 # Devvit local state
 .devvit/
 
-# Environment & secrets
+# Environment & local overrides
 .env
 .env.*
 *.local

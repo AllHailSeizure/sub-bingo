@@ -139,5 +139,5 @@ http.callsTo('api.example.com'); // recorded calls with parsed JSON bodies
 - **Event payloads**: they follow the protobuf JSON shapes, but enum fields use numeric values and many optional fields are defaulted. A self post's `url` is its own reddit.com permalink, as in Reddit's API; this is assumed for trigger payloads, not verified against live events. Pass `url: ''` to model a payload with no URL.
 - **IDs**: generated ids (`t3_p1`, `t1_c2`, ...) skip ids a test already seeded; seeding a duplicate id throws.
 - **Cron**: the matcher runs at minute resolution in UTC. A 6-field (seconds) expression fires once per matching minute. Jobs fire in sequence, not concurrently.
-- **Settings**: validation (types, `onValidate` handlers) is not run. Secrets are plain values.
+- **Settings**: validation (types, `onValidate` handlers) is not run. Values are stored as plain strings with no extra masking.
 - **Realtime, payments and the client webview** are not modeled. Use `mocks.realtime` / `mocks.media` directly.
